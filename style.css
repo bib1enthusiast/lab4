@@ -1,0 +1,159 @@
+body {
+    background-color: #edeef0;
+}
+
+.header {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background-color: #507299;
+    margin: -10px;
+    padding: 0;
+    margin-bottom: 20px;
+    z-index: 10;
+}
+
+.logo {
+    height: auto;
+    width: auto;
+    position: absolute;
+    right: 85%;
+    
+}
+
+.main_content {
+    position: relative;
+    height: auto;
+    font-family: 'Arial', Times, serif;
+}
+
+.left-panel {
+    margin-top: 70px;
+    position: absolute;
+    right: 67%;
+    width: 300px;
+}
+
+a {
+    text-decoration: none;
+    color: #507299;
+}
+
+
+a:hover {
+    background-color: #e1e5eb;
+  }
+
+ul {
+    margin-top: -10px;
+    list-style-type: none;
+}
+
+li {
+    margin-top: 0;
+    margin: 20px;
+}
+
+.content {
+    margin-top: 70px;
+    position: absolute;
+    width: 470px;
+    left: 32%;
+    right: 90%;
+    text-align: justify;
+}
+
+.post1 {
+    border: 3px solid #e1e5eb;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 0;
+    margin-bottom: 20px;
+    background-color: white;
+    padding-bottom: 30px;
+}
+
+.like {
+    float: left;
+}
+
+.comment {
+    float: right;
+    padding-top: 0;
+}
+
+.line {
+    background-color: #cccccc;
+    height: 3px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.line_header {
+    background-color: #cccccc;
+    height: 3px;
+    width: 110%;
+    margin-left: -20px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+
+}
+
+img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+
+.advertise {
+    margin-top: 70px;
+    position: fixed;
+    left: 75%;
+    width: 162px;
+}
+
+.adver_1 {
+    border: 3px solid #e1e5eb;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+@media (max-width: 1200px) {
+    .advertise {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .content {
+        top: 150px;
+        left: unset;
+        right: 15%;
+    }
+
+    .left-panel {
+        width: 500px;
+        right: 15%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+::selection {
+    color: green;
+    background-color: #e1e5eb;
+  }
